@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="290.982" height="55.016" viewBox="0 0 290.982 55.016">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6382e2"/>
+      <stop offset="1" stop-color="#4f76ec"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="0.5" cy="0.5" r="0.5" gradientTransform="matrix(-1, 0, 0, 1, 1, 0)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6181e2"/>
+      <stop offset="1" stop-color="#6184f1"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-3" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7490e3"/>
+      <stop offset="1" stop-color="#5a7ce5"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_54" data-name="Group 54" transform="translate(-1431.509 -469)">
+    <path id="Path_242" data-name="Path 242" d="M0,0C12.35-.444,60,0,60,0V45s-45.495.035-60,0S6.1,32.907,17.484,21.983C7.657,12.249-12.35.444,0,0Z" transform="translate(1436.5 479)" fill="url(#radial-gradient)"/>
+    <path id="Path_243" data-name="Path 243" d="M55.009,0c-12.35-.444-60,0-60,0V45s45.495.035,60,0-6.1-12.093-17.484-23.016C47.352,12.249,67.359.444,55.009,0Z" transform="translate(1662.491 479)" fill="url(#radial-gradient-2)"/>
+    <rect id="Rectangle_564" data-name="Rectangle 564" width="220" height="45" transform="translate(1466.5 469)" fill="url(#radial-gradient-3)"/>
+    <path id="Path_244" data-name="Path 244" d="M-1691,11143.765s-66.821-4.562,0,9.627C-1690.9,11144.44-1691,11143.765-1691,11143.765Z" transform="translate(3187.5 -10630)" fill="#3955a8"/>
+    <path id="Path_245" data-name="Path 245" d="M-1720.652,11143.765s66.821-4.562,0,9.627C-1720.756,11144.44-1720.652,11143.765-1720.652,11143.765Z" transform="translate(3378.198 -10630)" fill="#3955a8"/>
+  </g>
+</svg>

@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+.info {
+  .plus-icon {
+    margin: 0;
+    border-radius: 0.5rem;
+    width: 45px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    cursor: pointer; 
+    background: radial-gradient(
+      circle,
+      #C0A5FF,
+      #6245A5
+    );
+    box-shadow: 0 0 15px #8358e8;
+    transition: 0.2s;
+    text-decoration: none !important;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px #8358e8;
+    }
+    a, p {
+      color: white !important;
+      font-size: 12px !important;
+      font-family: "Plus Jakarta Sans" !important;
+      line-height: 0 !important;
+      font-weight: bolder !important;
+      margin: 0 !important;
+    }
+  }
+  #verified {
+    height: 26px;
+    position: relative;
+    width: 1.5rem;
+  }
+}
+
+
+
+.account {
+  display: flex;
+  align-items: center;
+
+  .user {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    #user-options {
+      position: absolute;
+      padding: 1rem;
+      top: 165%;
+      background-color: white;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.16);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        padding-bottom: 10px;
+        color: #7b7b7b;
+        padding-inline: 1rem;
+        font-weight: 500;
+        &:hover {
+          cursor: pointer;
+          color: darken(#7b7b7b, 25%);
+          transition: color 0.2s;
+          font-weight: 600;
+        }
+      }
+
+      #user-option-separator {
+        width: 100%;
+        height: 1px;
+        background-color: #7b7b7b;
+        padding-inline: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+          
+     
+      
+      #option-logout {
+        display: flex;
+        align-items: center;
+        color: #8558e8;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 700;
+        svg {
+          width: 20px;
+          height: 20px;
+          margin-right: 0.2rem;
+
+          path {
+            fill: #8558e8;
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+          color: darken(#8558e8, 25%);
+          transition: color 0.2s;
+
+          svg {
+            path {
+              fill: darken(#8558e8, 25%);
+              transition: fill 0.2s;
+            }
+          }
+        }
+      }
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 10px;
+        border-radius: 100%;
+      }
+
+      h3 {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        color: white;
+        padding-right: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        white-space: nowrap;
+      }
+
+      svg {
+        padding-right: 10px;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        h3 {
+          color: rgb(197, 197, 197);
+          transition: color 0.2s;
+        }
+      }
+    }
+
+    .menu {
+      position: absolute;
+    }
+  }
+
+  h4 {
+    font-family: "Segoe UI Regular", sans-serif;
+    font-size: 16px;
+  }
+
+  .button {
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    padding-inline: 1rem;
+    background-color: white;
+    color: #8558e8;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-inline: 0.5rem;
+
+    svg {
+      padding-right: 5px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(200, 200, 200);
+      transition: background-color 0.1s;
+    }
+
+    &:active {
+      background-color: white;
+    }
+  }
+}
+
+.overlay-drop{
+  position: fixed;
+  display: none;
+  z-index: 3;
+  width: 100%;
+  margin-top: 4rem;
+  height: calc(100vh);
+background-color:transparent;
+
+}

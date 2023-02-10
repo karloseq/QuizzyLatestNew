@@ -1,0 +1,10 @@
+.no-hover:hover {
+    background-color: white !important;
+}
+
+@media (max-width:1000px) {
+    .infobx-ico {
+        width: 125px !important;
+    }
+
+}

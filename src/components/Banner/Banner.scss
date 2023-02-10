@@ -1,0 +1,19 @@
+.banner {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    img {
+        position: relative;
+    }
+    .banner-text {
+        position: absolute !important;
+        bottom: 25px !important; 
+        width: 100% !important;
+        text-align: center !important;
+        font-family: 'Plus Jakarta Sans' !important;
+        font-weight: 600 !important;
+        font-size: 20px !important;
+        color: white !important;
+    }
+    margin-bottom: 10px;
+}

@@ -1,0 +1,187 @@
+.animateit {
+    animation: mymove 1s forwards ease-in-out;
+}
+
+.animateitup {
+    animation: mymoveup 1s forwards ease-in-out;
+}
+
+.show {
+    animation: showEmoji 0.8s forwards ease-in-out;
+}
+
+.hide {
+    animation: hideEmoji 0.8s forwards ease-in-out;
+}
+
+.showterm {
+    animation: showterm 1s forwards ease-in-out;
+
+}
+
+.hideterm {
+    animation: hideterm 1s forwards ease-in-out;
+
+}
+
+.fontsmall {
+    animation: fontchota 1s forwards ease-in-out;
+    /* animation-delay: 100ms; */
+
+}
+
+.fontlarge {
+    animation: fontbara 1s forwards ease-in-out;
+    /* animation-delay: 500ms; */
+
+}
+
+.hidesub {
+    animation: hidesubs 1s forwards ease-in-out;
+    /* animation-delay: 750ms; */
+
+
+}
+
+.showsub {
+    animation: showsubs 1s forwards ease-in-out;
+
+
+}
+
+.cnb {
+    animation: showsubs 1s forwards ease-in-out;
+    /* animation-delay: 250ms; */
+
+}
+
+@keyframes fontbara {
+    from {
+        font-size: 32px;
+        margin-bottom: 170px;
+    }
+
+    to {
+        font-size: 52px;
+        margin-bottom: 0px;
+
+    }
+
+
+}
+
+@keyframes fontchota {
+    from {
+        font-size: 52px;
+        margin-bottom: 0px;
+    }
+
+    to {
+        font-size: 32px;
+        margin-bottom: 170px;
+
+    }
+
+
+}
+
+@keyframes mymove {
+    from {
+        margin-top: -40px;
+
+        opacity: 1;
+    }
+
+    to {
+        margin-top: -340px;
+        opacity: 0;
+    }
+
+
+}
+
+@keyframes mymoveup {
+    from {
+        margin-top: -340px;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: -0px;
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes showEmoji {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes showterm {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes showsubs {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes hideEmoji {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+
+}
+
+@keyframes hidesubs {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+
+}
+
+@keyframes hideterm {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+
+}

@@ -1,0 +1,45 @@
+.user-friends-main {
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    padding-top: 8rem;
+    h1, a {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        width: fit-content;
+    }
+    .back {
+        color: #5B5B5B; 
+        font-size: 18px;
+        font-weight: 600;
+    }
+    h1 {
+        color: #5B5B5B; 
+        font-size: 26px;
+    }
+
+    .user-friends {
+        display: flex; 
+        flex-direction: column;
+        width: 65%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 30px;
+        gap: 30px;
+        margin-left: 15%;
+       
+        
+        .back:hover {
+            cursor: pointer;
+            transition: 0.1s;
+            color: #8358E8;
+        }
+        
+        
+    }
+}
+@media (max-width:550px) {
+    .user-friends-main .user-friends{
+        width: 89%;
+        margin: 0 auto;
+    }
+}

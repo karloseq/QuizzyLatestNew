@@ -1,0 +1,73 @@
+.alert_message {
+  background-color: #cdb8ff;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5rem;
+  padding-inline: 2.5rem;
+  line-height: 30px;
+  padding-right: 9rem;
+  gap: 20px;
+  h2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: bolder;
+    color: #8358e8;
+
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .alert_message {
+    h2 {
+      padding-right: 0;
+      font-size: 25px;
+    }
+  }
+  .infobx-ico {
+    width: 125px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .alert_message {
+    padding-right: 4rem;
+  }
+}
+@media (max-width: 700px) {
+  .alert_message {
+    padding-right: 4rem;
+    padding-inline: 1rem;
+    gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .alert_message {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    white-space: break-spaces;
+    h2 {
+    }
+  }
+}
+
+    @media (max-width: 445px) {
+      
+      .alert_message h2{
+  width: 90%  ;
+
+}
+    }
+  @media (max-width: 415px) {
+
+   .alert_message h2{
+  width: 98%  ;
+   }
+   .infobx-ico {
+    width: 40px !important;
+}
+  }

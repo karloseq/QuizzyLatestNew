@@ -1,0 +1,42 @@
+.rotate-no {
+    animation: myrotateno 0.8s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 0 !important;
+}
+
+.rotate-yes {
+    animation: myrotateyes 0.8s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 1 !important;
+
+}
+
+@keyframes myrotateyes {
+    from {
+        transform: rotateX(180deg);
+        /* opacity: 0; */
+
+
+    }
+
+    to {
+        transform: rotateX(0deg);
+        /* opacity: 1; */
+    }
+
+
+}
+
+@keyframes myrotateno {
+    from {
+        transform: rotateX(0deg);
+        /* opacity: 1; */
+
+
+    }
+
+    to {
+        transform: rotateX(180deg);
+        /* opacity: 0; */
+    }
+
+
+}

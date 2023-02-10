@@ -1,0 +1,556 @@
+.practice-exam-container {
+    .practice-exam-option {
+        background-color: #F5F5FB;
+        padding: 90px 50px 50px 50px;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+
+        .practice-exam-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .practice-exam-top-left {
+
+                .title {
+                    width: 500px;
+                    height: 30px;
+                    border-radius: 6px;
+                    background-color: #cccbcb70;
+
+                }
+
+                .sub-title {
+                    width: 450px;
+                    height: 20px;
+                    border-radius: 6px;
+                    background-color: #B4B3B6;
+                    margin-top: 20px;
+                }
+            }
+
+        }
+
+        .practice-exam-center {
+            display: flex;
+            // justify-content: space-between;
+            gap: 50px;
+            margin: 50px 0;
+
+            .practice-exam-center-left {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .title {
+                    width: 70%;
+                    height: 20px;
+                    border-radius: 6px;
+                    background-color: #B4B3B6;
+                    margin-bottom: 24px;
+                }
+
+                .questions-container {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 20px;
+
+                    .question {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 10px;
+                        background-color: #969696;
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                    }
+                }
+            }
+
+            .practice-exam-center-right {
+                padding: 30px 0;
+                flex: 7;
+
+                .practice-exam-center-right-top {
+                    line-height: 32px;
+
+                    .sub-title {
+                        width: 150px;
+                        height: 20px;
+                        border-radius: 6px;
+                        background-color: #B4B3B6;
+                        margin-bottom: 10px;
+                    }
+
+                    .title-container {
+
+                        .title {
+                            width: 200px;
+                            height: 20px;
+                            border-radius: 6px;
+                            background-color: #B4B3B6;
+                        }
+
+                    }
+
+                }
+
+                .practice-exam-center-right-bottom {
+                    margin-top: 20px;
+
+                    .answer-cont {
+                        width: 65%;
+                        height: 50px;
+                        background-color: #cccbcb70;
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.01);
+                        border-radius: 6px;
+                        margin-bottom: 20px;
+                    }
+
+
+                    .btn-container {
+                        width: 65%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+                        margin-top: 80px;
+
+                        .prev-btn,
+                        .next-btn {
+                            width: 150px;
+                            height: 50px;
+                            border: 0;
+                            border-radius: 6px;
+                            background-color: #cccbcb70;
+                            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.01);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .practice-exam-main {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 15;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .container {
+            width: 460px;
+            background-color: #F5F5FB;
+            border-radius: 12px;
+            padding: 40px 60px;
+
+            .title {
+                text-align: center;
+                font-size: 22px;
+            }
+
+            .container-top {
+                display: flex;
+                align-items: center;
+                gap: 100px;
+                margin-top: 20px;
+
+                .container-top-radio {
+                    p {
+                        color: #969696;
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+
+                    .radio-container {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        margin-top: 10px;
+
+
+                        label {
+                            position: relative;
+                            font-weight: 600;
+                            display: flex;
+                            align-items: center;
+                            cursor: pointer;
+                            font-size: 14px;
+
+                            input[type="radio"] {
+                                display: none;
+                            }
+
+                            span {
+                                display: block;
+                                width: 14px;
+                                height: 14px;
+                                border: 1px solid #969696;
+                                border-radius: 50%;
+                                margin-right: 10px;
+                                position: relative;
+                            }
+
+                            span:after {
+                                content: '';
+                                width: 9px;
+                                height: 9px;
+                                background-color: #8358E8;
+                                border-radius: 50%;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%) scale(0);
+                                transition: 300ms ease-in-out 0s;
+                            }
+
+                            input[type="radio"]:checked~span {
+                                border-color: #8358E8;
+                            }
+
+                            input[type="radio"]:checked~span:after {
+                                transform: translate(-50%, -50%) scale(1);
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .container-center {
+                display: flex;
+                gap: 30px;
+                margin-top: 30px;
+
+                .images-radio-cont {
+                    margin-top: 10px;
+                }
+
+                .checkbox-container {
+                    p {
+                        color: #969696;
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+
+                    .radio-container {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        margin-top: 10px;
+
+
+                        label {
+                            position: relative;
+                            font-weight: 600;
+                            display: flex;
+                            align-items: center;
+                            font-size: 14px;
+                            cursor: pointer;
+
+                            input[type="checkbox"] {
+                                appearance: none;
+                                -webkit-appearance: none;
+                                width: 14px;
+                                height: 14px;
+                                border-radius: 2px;
+                                border: 1px solid #969696;
+                                margin-right: 10px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+
+                            input[type="checkbox"]:after {
+                                content: '\f00c';
+                                font-family: "Font Awesome 6 Free";
+                                font-weight: 900;
+                                font-size: 12px;
+                                color: white;
+                                display: none;
+                            }
+
+                            input[type="checkbox"]:checked {
+                                background-color: #8358E8;
+                                border-color: #8358E8;
+                            }
+
+                            input[type="checkbox"]:checked:after {
+                                display: block;
+                            }
+                        }
+
+                    }
+                }
+
+                .container-top-radio {
+                    p {
+                        color: #969696;
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+
+                    .radio-container {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        margin-top: 10px;
+
+
+                        label {
+                            position: relative;
+                            font-weight: 600;
+                            display: flex;
+                            align-items: center;
+                            cursor: pointer;
+                            font-size: 14px;
+
+                            input[type="radio"] {
+                                display: none;
+                            }
+
+                            span {
+                                display: block;
+                                width: 14px;
+                                height: 14px;
+                                border: 1px solid #969696;
+                                border-radius: 50%;
+                                margin-right: 10px;
+                                position: relative;
+                            }
+
+                            span:after {
+                                content: '';
+                                width: 9px;
+                                height: 9px;
+                                background-color: #8358E8;
+                                border-radius: 50%;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%) scale(0);
+                                transition: 300ms ease-in-out 0s;
+                            }
+
+                            input[type="radio"]:checked~span {
+                                border-color: #8358E8;
+                            }
+
+                            input[type="radio"]:checked~span:after {
+                                transform: translate(-50%, -50%) scale(1);
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .container-bottom {
+                margin-top: 30px;
+
+                .container-bottom-top {
+                    display: flex;
+                    gap: 20px;
+
+                    .box {
+                        p {
+                            color: #969696;
+                            font-weight: 600;
+                            font-size: 14px;
+                        }
+
+                        .box-cont {
+                            width: 100px;
+                            height: 45px;
+                            background-color: white;
+                            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                            border-radius: 10px;
+                            margin-top: 15px;
+                            padding: 5px;
+                            display: flex;
+
+                            input {
+                                width: 100%;
+                                height: 100%;
+                                border: 0;
+                                outline: 0;
+                                padding: 0 10px;
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+
+                            .btn-cont {
+                                display: flex;
+                                flex-direction: column;
+
+                                button {
+                                    width: 16px;
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border: 0;
+                                    outline: 0;
+                                    cursor: pointer;
+                                    background-color: #b4b3b685;
+                                    color: #636262;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .container-bottom {
+                    p {
+                        color: #969696;
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+
+                    .email-cont {
+                        width: 100%;
+                        height: 40px;
+                        background-color: white;
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                        border-radius: 10px;
+                        margin-top: 15px;
+
+                        input {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px;
+                            border: 0;
+                            outline: 0;
+                            padding: 0 15px;
+                        }
+                    }
+                }
+            }
+
+            .create-btn-cont {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .create-btn {
+                    margin-top: 30px;
+                    width: 130px;
+                    height: 45px;
+                    border: 0;
+                    border-radius: 10px;
+                    background-color: white;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                    font-size: 18px;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    cursor: pointer;
+
+                    .arrow-icon-cont {
+                        width: 25px;
+                        height: 25px;
+                        border: 1px solid #969696;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+// MEDIA QUERY FOR RESPONSIVENESS
+
+@media screen and (max-width: 767px) {
+    .practice-exam-container {
+        .practice-exam-option {
+            background-color: #F5F5FB;
+            height: 100vh;
+
+            .practice-exam-top {
+                display: none;
+            }
+
+            .practice-exam-center {
+                display: none;
+            }
+        }
+
+        .practice-exam-main {
+
+            .container {
+                width: 90%;
+                height: 90vh;
+                padding: 30px;
+                overflow-y: auto;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                .container-top {
+                    gap: 60px;
+
+                    .container-top-radio {
+                        .radio-container {
+                            label {
+                                span:after {
+                                    content: '';
+                                    width: 8px;
+                                    height: 8px;
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+
+                .container-center {
+                    flex-direction: column;
+
+                    .container-top-radio {
+                        .radio-container {
+                            label {
+                                span:after {
+                                    content: '';
+                                    width: 8px;
+                                    height: 8px;
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+
+                .container-bottom {
+
+                    .container-bottom-top {
+                        flex-direction: column;
+
+                        .box {
+                            text-align: center;
+
+                            .box-cont {
+                                width: 80%;
+                                margin: 0 auto;
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

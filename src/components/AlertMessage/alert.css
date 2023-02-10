@@ -1,0 +1,7 @@
+@media (max-width:415px) {
+    .alert_message {
+        word-break: break-word;
+        gap: 10px !important;
+    }
+
+}

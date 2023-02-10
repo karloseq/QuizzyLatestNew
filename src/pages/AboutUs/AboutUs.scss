@@ -1,0 +1,171 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  $gradient-color-1: #8358e8;
+  $gradient-color-2: #4c72e6;
+
+
+  .aboutus {
+    display: flex; 
+    flex-direction: column;
+    .plusbg {
+      position: absolute;
+      top: -900px;
+      left: -2.5rem;
+      z-index: 1;
+    }
+
+    .party {
+      transition: 0.3s; 
+      cursor: pointer;
+      margin-left: 5px;
+      &:hover {
+        transform: scale(1.2);
+        filter: brightness(1.75);
+      }
+    }
+
+    .about-us-main {
+      padding-top: 15rem;
+      width: 100%;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .disabled {
+        cursor: default;
+        background: #c5c5c5 !important;
+        &:hover {
+          box-shadow: 0px 0px 4px 1px #c5c5c5 !important;
+        }
+      }
+      .button {
+        text-decoration: none;
+        padding: 0.5rem;
+        padding-inline: 4rem;
+        border-radius: 20px;
+        color: white;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 600;
+        width: unset;
+        text-align: center;
+        background: rgb(76, 114, 230);
+        background: -moz-linear-gradient(
+          0deg,
+          $gradient-color-2 0%,
+          $gradient-color-1 80%
+        );
+        background: -webkit-linear-gradient(
+          0deg,
+          $gradient-color-2 0%,
+          $gradient-color-1 80%
+        );
+        background: linear-gradient(
+          0deg,
+          $gradient-color-2 0%,
+          $gradient-color-1 80%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c72e6",endColorstr="#8358e8",GradientType=1);
+
+        &:hover {
+          box-shadow: 0px 0px 4px 1px #8358E8;
+          transition: 0.3s;
+        }
+        margin-bottom: 30px;
+      }
+      .about, .sub {
+        color: white; 
+      }
+      li {
+        font-family: 'Plus Jakarta Sans';
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 500;
+        color: #5a5a5a;
+      }
+      .about {
+        font-family: 'Open Sans', sans-serif;;
+        font-size: 60px;
+        font-weight: 700;
+      }
+      .sub {
+        font-family: "Plus Jakarta Sans";
+        font-size: 25px;
+        font-weight: 400;
+      }
+      .tagline {
+          text-align: center;
+          font-family: 'Plus Jakarta Sans', sans-serif;;
+          color: #434343;
+          font-size: 45px;
+          font-weight: 800;
+          padding-top: 2rem;
+          max-width: 80%;
+      }
+      .subtagline {
+        text-align: center;
+        font-family: 'Plus Jakarta Sans', sans-serif;;
+        color: #434343;
+        font-size: 38px;
+        font-weight: 800;
+        padding-top: 2rem;
+    }
+      h3 {
+        color: #434343;
+        font-size: 25px;
+        text-align: center;
+        font-family: 'Plus Jakarta Sans', sans-serif;;
+        font-weight: 800;
+          padding-top: 2rem;
+      }
+      #tagline-1 {
+        padding-top: 15rem
+      }
+      a {
+        text-align: center;
+        width: 70%;
+        font-family: 'Plus Jakarta Sans';
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 500;
+        color: #5a5a5a;
+        
+      }
+      .highlight {
+          background-color: #8358E8;
+          color: white;
+      }
+      .underline {
+          text-decoration: underline;
+      }
+  }
+
+  }
+
+
+  @media (max-width: 768px) {
+    .aboutus {
+      main {
+        padding: 0;
+        padding-top: 5rem;
+        h1, h2, h3 {
+          text-align: center;
+          width: 80%;
+        }
+        .about {
+          font-size: 48px
+        }
+        .sub {
+          margin-top: 15px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 510px) { 
+    .aboutus { 
+      .plusbg { 
+        transform: scale(1.5);
+      }
+    }
+  }

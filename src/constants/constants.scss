@@ -1,0 +1,109 @@
+.user-info-cover {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  #verified {
+    width: 26px;
+    height: 26px;
+    position: relative;
+  }
+
+  .plus-icon {
+    margin: 0;
+    border-radius: 0.5rem;
+    width: 45px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    cursor: pointer; 
+    background: radial-gradient(
+      circle,
+      #C0A5FF,
+      #6245A5
+    );
+    box-shadow: 0 0 15px #8358e8;
+    transition: 0.2s;
+    text-decoration: none !important;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px #8358e8;
+    }
+    a, p {
+      color: white !important;
+      font-size: 12px !important;
+      font-family: "Plus Jakarta Sans" !important;
+      line-height: 0 !important;
+      font-weight: bolder !important;
+      margin: 0 !important;
+    }
+  }
+
+  .Administrator {
+    color: #00F260 !important;
+    --color1: white;
+    --color2: lime;
+    --color3: green;
+    --color4: darkgreen ;
+    
+  }
+/*
+  @keyframes animate {
+    0% {
+      color: white; 
+      filter: blur(2px) hue-rotate(0deg);
+      text-shadow: 0 0 10px #00b3ff
+    }
+    
+    30% {
+      color: white; 
+      filter: blur(2px) hue-rotate(108deg);
+      text-shadow: 0 0 10px #00b3ff
+    }
+
+    50% {
+      color: white; 
+      filter: blur(2px) hue-rotate(180deg);
+      text-shadow: 0 0 10px #00b3ff
+    }
+
+    100% {
+      color: white; 
+      filter: blur(2px) hue-rotate(360deg);
+      text-shadow: 0 0 10px #00b3ff
+    }
+  }*/
+
+  @keyframes flicker {
+    50% {
+      color: white;
+      filter: saturate(200%) hue-rotate(20deg);
+    }
+  }
+  
+  #flicker-text {
+    --interval: 2s;
+    display: block;
+    text-shadow: 
+      0 0 10px var(--color1),
+      0 0 20px var(--color2),
+      0 0 40px var(--color3),
+      0 0 80px var(--color4);
+    will-change: filter, color;
+    filter: saturate(60%);
+    animation: flicker steps(100) var(--interval) 1s infinite;
+  }
+
+  #animate-text {
+    animation: animate 3s linear infinite;
+  }
+
+  .Student { 
+    animation: none; 
+    filter: none; 
+    text-shadow: none;
+  }

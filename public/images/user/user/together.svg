@@ -1,0 +1,15 @@
+<svg id="group_add_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_48" data-name="Group 48">
+    <rect id="Rectangle_421" data-name="Rectangle 421" width="24" height="24" fill="none"/>
+    <rect id="Rectangle_422" data-name="Rectangle 422" width="24" height="24" fill="none"/>
+  </g>
+  <g id="Group_50" data-name="Group 50">
+    <g id="Group_49" data-name="Group 49">
+      <path id="Path_221" data-name="Path 221" d="M22,9V7H20V9H18v2h2v2h2V11h2V9Z" fill="#fff"/>
+      <path id="Path_222" data-name="Path 222" d="M8,12A4,4,0,1,0,4,8,4,4,0,0,0,8,12ZM8,6A2,2,0,1,1,6,8,2.006,2.006,0,0,1,8,6Z" fill="#fff"/>
+      <path id="Path_223" data-name="Path 223" d="M8,13c-2.67,0-8,1.34-8,4v3H16V17C16,14.34,10.67,13,8,13Zm6,5H2v-.99C2.2,16.29,5.3,15,8,15s5.8,1.29,6,2Z" fill="#fff"/>
+      <path id="Path_224" data-name="Path 224" d="M12.51,4.05a5.981,5.981,0,0,1,0,7.9,3.98,3.98,0,0,0,0-7.9Z" fill="#fff"/>
+      <path id="Path_225" data-name="Path 225" d="M16.53,13.83A4.237,4.237,0,0,1,18,17v3h2V17C20,15.55,18.41,14.49,16.53,13.83Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

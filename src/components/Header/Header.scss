@@ -1,0 +1,233 @@
+$gradient-color-1: #8358e8;
+$gradient-color-2: #4c72e6;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.small-screen-navbar {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 1000;
+}
+.hide-it {
+  display: none !important;
+}
+header {
+  .svg-back {
+    display: none;
+  }
+  .nav-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    .hotdog-nav {
+      margin-top: 5px;
+      display: none;
+    }
+  }
+  position: fixed;
+  z-index: 13;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding-inline: 2rem;
+  height: 4rem;
+  background: rgb(76, 114, 230);
+  background: -moz-linear-gradient(
+    0deg,
+    $gradient-color-2 0%,
+    $gradient-color-1 80%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    $gradient-color-2 0%,
+    $gradient-color-1 80%
+  );
+  background: linear-gradient(
+    0deg,
+    $gradient-color-2 0%,
+    $gradient-color-1 80%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c72e6",endColorstr="#8358e8",GradientType=1);
+
+  h1 {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+  }
+
+  #navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  #selection-dash {
+    position: relative;
+    background: white;
+    width: 100%;
+    height: 3px;
+    display: none;
+  }
+
+  #navigation a:nth-child(n):hover {
+    h2 {
+      color: rgb(197, 197, 197);
+      transition: color 0.2s;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 40px;
+  }
+
+  a {
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    margin-left: auto;
+  }
+}
+
+/*
+@media (max-width: 1600px) {
+  header {
+    a:last-child {
+      margin-right: 10px !important;
+    }
+  }
+}*/
+
+@media (max-width: 1535px) {
+  header {
+    .searchBar {
+      display: none;
+    }
+    .search-icon {
+      display: block; //!important;
+    }
+  }
+}
+
+@media (max-width: 1048px) {
+  header {
+    #navigation {
+      // display: none !important;
+      h2 {
+        margin-right: 25px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  header {
+    #navigation {
+      display: none !important;
+    }
+    .hotdog-nav {
+      display: block !important;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    .pc-only {
+      display: none !important;
+    }
+    .mobile-only {
+      display: block !important;
+    }
+    .searchBar {
+      width: auto;
+      min-width: 300px;
+      padding-inline: 1rem;
+    }
+    /*
+      gap: 0px; 
+    padding-inline: 0;
+    .right { 
+      margin-left: 1rem; 
+      gap: 20px;
+    }
+    */
+  }
+}
+
+@media (min-width: 600px) {
+  header {
+    .mobile-only {
+      display: none !important;
+    }
+  }
+}
+
+@media (min-width: 980px) {
+  .mobile-side  {
+    display: none;
+  }
+}
+@media (max-width: 980px) {
+  .mobile-side {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    padding: 70px 20px 10px 20px;
+
+    width: 300px;
+    background-color: #ffffff;
+    z-index: 9999;
+  }
+  .mbl-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.781);
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+  .cross {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  
+}
+
+@media (max-width: 550px) {
+  .mobile-side {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    padding: 70px 20px 10px 20px;
+
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 9999;
+  }}

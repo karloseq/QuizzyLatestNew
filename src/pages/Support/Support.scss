@@ -1,0 +1,628 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@keyframes mockupTransition {
+  from {
+    filter: blur(0px);
+  }
+  to {
+    filter: blur(4px);
+  }
+}
+@keyframes bubblesyay {
+  from {
+    transform: rotate(0) translateY(-50px) scale(0.6);
+  }
+  to {
+    transform: rotate(45deg) translateY(0px) scale(1);
+    opacity: 15%;
+  }
+}
+
+@keyframes explode {
+  // used for bubble click animation
+  0% {
+  }
+  100% {
+    transform: translateY(-700px);
+  }
+}
+
+@keyframes dottedsquareyay {
+  // used for the dotted square
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes initialTextAnimation {
+  from {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes increaseGapAnimation {
+  from {
+    gap: 600px;
+    opacity: 0;
+  }
+  to {
+    gap: 300px;
+    opacity: 1;
+  }
+}
+
+@keyframes initialButtonAnimation {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes initialRectangleAnimation1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: random(100) / 500;
+  }
+}
+
+@keyframes initialRectangleAnimation2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: random(100) / 500;
+  }
+}
+
+@keyframes initialRectangleAnimation3 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: random(100) / 500;
+  }
+}
+
+@keyframes initialRectangleAnimation4 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: random(100) / 500;
+  }
+}
+
+@keyframes initialRectangleAnimation5 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: random(100) / 500;
+  }
+}
+
+@keyframes emojiLoop {
+  from {
+    filter: drop-shadow(0px 0px 5px #8358e8);
+  }
+  to {
+    transform: scale(1.05);
+    filter: drop-shadow(0px 0px 20px #8358e8);
+  }
+}
+
+.support-main {
+  background-color: #f5f5fb;
+  overflow-x: hidden;
+  a {
+    text-decoration: none;
+  }
+  .support-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 120px;
+    justify-content: center;
+    overflow-y: hidden;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .support-card {
+      width: 374px;
+      min-height: 430px;
+      height: auto;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      border-radius: 25px;
+      padding-top: 45px;
+      padding-bottom: 45px;
+      padding-inline: 20px;
+      filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.16));
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+        background-color: #8358e8;
+        filter: drop-shadow(0px 0px 30px #8358e8);
+        transform: scale(1.1);
+        h1,
+        p {
+          color: white;
+        }
+        &.support-card-red {
+          background-color: #ff4d4d;
+          filter: drop-shadow(0px 0px 30px #ff4d4d);
+        }
+        &.support-card-green {
+          background-color: #58e892;
+          filter: drop-shadow(0px 0px 30px #58e892);
+        }
+      }
+      h1 {
+        font-size: 39px !important;
+      }
+      p {
+        font-size: 22px !important;
+      }
+      .icon {
+        height: 102px;
+        width: 102px;
+        background-color: #8358e8;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.icon-red {
+          background-color: #ff4d4d;
+        }
+        &.icon-green {
+          background-color: #58e892;
+        }
+      }
+    }
+  }
+ 
+  .background-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    .mockup {
+      width: 100%;
+      height: 657px;
+      max-width: 100%;
+      z-index: 0;
+      position: absolute;
+      filter: blur(6px);
+      animation-name: mockupTransition;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+      animation-fill-mode: forwards;
+    }
+    .decor {
+      position: absolute;
+      z-index: 0; //-2;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 40%;
+      height: 657px;
+      .right-container {
+        .rounded-rectangles {
+          img:nth-of-type(1) {
+            animation-name: initialRectangleAnimation1;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-delay: 0.2s;
+            opacity: 0%;
+          }
+          img:nth-of-type(2) {
+            opacity: 0%;
+            margin-top: -250px;
+            margin-left: 150px;
+            animation-name: initialRectangleAnimation2;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-delay: 0.25s;
+          }
+          img:nth-of-type(3) {
+            opacity: 0%;
+            margin-top: -80px;
+            margin-left: -250px;
+            animation-name: initialRectangleAnimation3;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-delay: 0.3s;
+          }
+          img:nth-of-type(4) {
+            opacity: 06%;
+            margin-top: -300px;
+            animation-name: initialRectangleAnimation4;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-delay: 0.2s;
+          }
+          img:nth-of-type(5) {
+            opacity: 0%;
+            margin-top: -150px;
+            margin-left: 30px;
+            animation-name: initialRectangleAnimation5;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-delay: 0.3s;
+          }
+        }
+      }
+      .left-container {
+        margin-top: 100px;
+        .dotsquares {
+          margin-left: 45px;
+          animation-name: dottedsquareyay;
+          animation-iteration-count: infinite;
+          animation-duration: 1s;
+          animation-direction: alternate;
+        }
+        .bubbles {
+          .bubble {
+            border-radius: 1000px;
+            opacity: 5%;
+            background-color: white;
+            width: 28px;
+            height: 28px;
+            transform: rotate(0) translateY(-50px) scale(0.6);
+            //transform-origin: 0px 1000px;
+            animation-name: bubblesyay;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            &:nth-of-type(1) {
+              margin-left: 350px;
+              animation-delay: 0.25s;
+            }
+            &:nth-of-type(2) {
+              margin-top: 50px;
+              margin-left: 200px;
+              width: 54px;
+              height: 54px;
+              animation-delay: 0.35s;
+            }
+            &:nth-of-type(3) {
+              margin-top: 50px;
+              margin-left: 400px;
+              width: 54px;
+              height: 54px;
+              animation-delay: 0.45s;
+            }
+            &:nth-of-type(4) {
+              margin-top: 25px;
+              margin-left: 250px;
+              width: 92px;
+              height: 92px;
+              animation-delay: 0.55s;
+            }
+            &:nth-of-type(5) {
+              margin-top: 50px;
+              margin-left: 200px;
+              width: 64px;
+              height: 64px;
+              animation-delay: 0.65s;
+            }
+            &:nth-of-type(6) {
+              margin-left: 50px;
+              width: 28px;
+              height: 28px;
+              animation-delay: 0.75s;
+            }
+          }
+        }
+      }
+    }
+    .background-gradient {
+      background: linear-gradient(#8358e8, #4c72e6);
+      width: 100%;
+      position: relative;
+      opacity: 84%;
+      z-index: 1;
+      height: 657px;
+    }
+
+    .background-content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      height: 100%;
+      z-index: 2;
+      align-items: center;
+      .center-text {
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+
+        .intro {
+          font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-size: 20px;
+          letter-spacing: 5px;
+          line-height: 40px;
+          color: white;
+          font-weight: 100;
+          opacity: 0;
+          animation-name: initialTextAnimation;
+          animation-delay: 0.25s;
+          animation-fill-mode: forwards;
+          animation-duration: 1s;
+          animation-timing-function: ease-out;
+        }
+        .meetquizzy {
+          font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          color: white;
+          font-size: 73px;
+          font-weight: bold;
+          opacity: 0;
+          animation-name: initialTextAnimation;
+          animation-delay: 1s;
+          animation-fill-mode: forwards;
+          animation-duration: 1s;
+          animation-timing-function: ease-out;
+        }
+        .desc {
+          font-size: 22px;
+          font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          color: white;
+          line-height: 40px;
+          opacity: 0;
+          animation-name: initialTextAnimation;
+          animation-delay: 1.5s;
+          animation-fill-mode: forwards;
+          animation-duration: 1s;
+          animation-timing-function: ease-out;
+        }
+        .sb-cover {
+          animation-name: initialTextAnimation;
+          animation-delay: 1.5s;
+          opacity: 0;
+          animation-fill-mode: forwards;
+          animation-duration: 1s;
+          animation-timing-function: ease-out;
+        }
+        .buttons {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          margin-top: 25px;
+          gap: 35px;
+          width: 100%;
+          opacity: 0;
+          animation-name: initialButtonAnimation;
+          animation-delay: 2s;
+          animation-fill-mode: forwards;
+          animation-duration: 1s;
+          animation-timing-function: ease-out;
+          button {
+            background-color: white;
+            border-radius: 20px;
+            border: none;
+            z-index: 5;
+            filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.16));
+            width: 158px;
+            height: 61px;
+            color: #8558e8;
+            font-weight: 600;
+            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.2s ease-out;
+            &:hover {
+              transform: scale(1.1);
+              filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.4));
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sections {
+    padding: 0em 1em;
+  }
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    &.section-here-to-help {
+      margin-top: 120px;
+    }
+
+    button {
+      background: #8358e8;
+      border-radius: 15px;
+      filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.16));
+      width: 190px;
+      height: 66px;
+      font-family: "Open Sans";
+      color: white;
+      font-size: 24px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: all 0.25s;
+      &:hover {
+        transform: scale(1.02);
+        filter: drop-shadow(0 0 25px rgb(206, 0, 0));
+        background: #d42f46;
+      }
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 100%;
+      &.here-to-help {
+        width: 692px;
+        gap: 10px !important;
+      }
+      &.info-support-cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .purple-line {
+        background-color: #8358e8;
+        border-radius: 20px;
+        max-width: 84px;
+        width: 100%;
+        height: 5px;
+      }
+      h1 {
+        color: #434343;
+        font-weight: bold;
+        font-size: 52px;
+        font-family: "Plus Jakarta Sans";
+        text-align: center;
+      }
+      p {
+        color: #434343;
+        font-family: "Plus Jakarta Sans";
+        font-size: 22px;
+        font-weight: 500;
+        width: 100%;
+        line-height: 40px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 1543px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1305px) {
+}
+
+@media (max-width: 995px) {
+}
+
+@media (max-width: 770px) {
+}
+
+@media (max-width: 720px) {
+  .sections {
+    .info {
+      align-items: center;
+    }
+  }
+  .center-text {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .index-main {
+    .background-container {
+      .background-gradient {
+        max-height: 100% !important;
+        min-height: unset !important;
+      }
+      .mockup {
+        height: auto !important;
+        max-height: 100% !important;
+        width: auto !important;
+      }
+    }
+    .sections {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      section {
+        width: 100%;
+        .info {
+          .purple-line {
+            align-self: center;
+          }
+          h1,
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .center-text {
+      width: 80% !important;
+    }
+
+    .recall-sessions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .emojis-cover {
+      height: auto !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .emojis-box {
+        padding: 20px;
+      }
+      .smileys {
+        flex-direction: column !important;
+      }
+    }
+    .recall-flashcard-cover {
+      align-items: center;
+      .front {
+        height: 550px !important;
+        h1 {
+          font-size: 48px !important;
+        }
+        h2 {
+          font-size: 30px !important;
+        }
+      }
+      .back {
+        height: 550px !important;
+        .textarea {
+          width: 100% !important;
+          height: 100% !important;
+          font-size: 22px !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1543px) {
+}
+@media (max-width: 1333px) {
+}
+@media (max-width: 650px) {
+}

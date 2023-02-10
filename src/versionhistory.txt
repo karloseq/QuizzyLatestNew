@@ -1,0 +1,20 @@
+2/6/22
+- Added server side checks for username on the signup 
+- Beautified Login and Signup 
+- Started server-sided signup
+2/7/22
+- Finished server-sided signup 
+- Made it so you can view your user info in your dashboard
+- BUG: When you refresh, it automatically logs you out. (Check useSelector Hook)
+2/8/22
+- Fixed aforementioned bug 
+- User saves on the client now 
+- Profile pictures working
+- TODO: Hash passwords
+2/9/22
+- Passwords are now hashed 
+- Signup data is now thoroughly checked 
+2/10/2022
+- session system almost complete :D 
+- session system uses OOP in php 
+- gotta make it so users cant manipulate other users with just the session id. perhaps add a check for the correct user id? so they'd have to match the user id and the session id to make changes?
